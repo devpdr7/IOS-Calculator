@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="calculadora">
+        <p id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="apagar" onclick="clean()">C</button></td>
+                <td><button class="apagar" onclick="back()">&larr;</button></td>
+                <td><button class="apagar">%</button></td>
+                <td><button class="sinais" onclick="insert('/')">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" onclick="insert('7')">7</button></td>
+                <td><button class="numeros" onclick="insert('8')">8</button></td>
+                <td><button class="numeros" onclick="insert('9')">9</button></td>
+                <td><button class="sinais" onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" onclick="insert('4')">4</button></td>
+                <td><button class="numeros" onclick="insert('5')">5</button></td>
+                <td><button class="numeros" onclick="insert('6')">6</button></td>
+                <td><button class="sinais" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="numeros" onclick="insert('1')">1</button></td>
+                <td><button class="numeros" onclick="insert('2')">2</button></td>
+                <td><button class="numeros" onclick="insert('3')">3</button></td>
+                <td><button class="sinais" onclick="insert('+')">+</button></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2"><button class="numeros" id="zero" style="width: 106px;" onclick="insert('0')">0</button></td>
+                <td><button class="numeros" onclick="insert('.')">.</button></td>
+                <td><button class="sinais" onclick="calcular()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <footer><p>@pdr.mont</p></footer>
+</body>
+    <script src="main.js"></script>
+</html>
